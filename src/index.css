@@ -1,5 +1,21 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #242424;
+body{
+  background-color: rgb(2, 27, 27);
   color: white;
+}
+
+.btn-cart{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: relative;
+}
+.btn-cart__number{
+  color: white;
+  font-weight: bold;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(25%, 25%);
 }
