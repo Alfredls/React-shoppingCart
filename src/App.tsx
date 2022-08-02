@@ -4,12 +4,13 @@ import { Home } from './pages/Home';
 import { Store } from "./pages/Store";
 import { About } from "./pages/About";
 import { Navba } from "./components/Navbar";
+import { ShoopingCardProvider } from './context/ShoopingCardContext';
 
 function App() {
 
   return (
-    <>
-      <Navba></Navba>
+    <ShoopingCardProvider>
+      <Navba />
       <Container className="mb-4">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,7 +18,7 @@ function App() {
           <Route path="/about" element={ <About />} />
         </Routes>
       </Container>
-    </>
+    </ShoopingCardProvider>
   )
 }
 

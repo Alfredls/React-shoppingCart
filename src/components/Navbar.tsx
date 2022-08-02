@@ -9,7 +9,7 @@ export const Navba = () => {
     <>
       <Navbar sticky='top' bg="dark" variant="dark" className='me-auto'>
         <Container>
-          <Navbar.Brand href="#home">SHOPPING</Navbar.Brand>
+          <Navbar.Brand to="/" as={NavLink}>SHOPPING</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link to="/" as={NavLink} >Home</Nav.Link>
             <Nav.Link to="/store" as={NavLink} >Store</Nav.Link>
