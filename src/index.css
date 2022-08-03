@@ -19,3 +19,6 @@ body{
   bottom: 0;
   transform: translate(25%, 25%);
 }
+.txt-color{
+  color: #000;
+}
