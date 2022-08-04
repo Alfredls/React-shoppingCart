@@ -4,7 +4,7 @@ body{
 }
 
 .contai{
-  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
 .navbar{
@@ -60,4 +60,52 @@ body{
   text-transform: uppercase;
   font-size: 0.8rem;
   color: rgb(34, 48, 71);
+}
+
+.card-img{
+  background: rgb(1, 57, 84);
+  background: linear-gradient(45deg, rgba(1, 57, 84, 1) 9%, rgba(5, 147, 179, 1) 88%);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img img{
+  width: 60%;
+  height: 90%;
+  object-fit: contain;
+  filter: drop-shadow(5px 5px 5px rgba(53, 53, 53, 0.5));
+  filter: saturate();
+}
+.center-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: rgb(95, 124, 167);
+}
+.bg-card{
+  background-color: rgb(56, 93, 124);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer{
+  background-color: rgb(33, 70, 100);
+  margin-top: 2.5rem;
+  width: 100%;
+  height: 80px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
 }
