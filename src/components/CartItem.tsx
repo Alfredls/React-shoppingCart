@@ -18,22 +18,19 @@ export const CartItem = ({ id, quantity }: CartItemProps) => {
 
   return (
     <Stack direction='horizontal' gap={2} className="d-flex align-item-center">
-      <img
-        src={item?.imgUrl}
-        style={{width: "125px", height:"75px", objectFit:"cover"}} 
-      />
+      <img src={item?.imgUrl} className="img-cart" />
       <div className='me-auto'>
         <div>
-          {item?.name}{ "  " }
+          <span className='name-title'>{item?.name}</span> {"  "}
           {
             quantity > 1 && (
-              <span className='text-muted' style={{ fontSize:"0.8rem"}}>
+              <span className='text-muted' style={{ fontSize:"0.7rem"}}>
                 {quantity}
               </span>
             )
           }
         </div>
-        <div className='text-muted' style={{fontSize: "0.75"}}>
+        <div className='text-muted' style={{fontSize: "0.7", letterSpacing: "-1px"}}>
           {formatCurrency(item.price)}
         </div>
       </div>

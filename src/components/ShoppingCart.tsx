@@ -3,6 +3,7 @@ import { useShoppingCart } from '../context/ShoopingCardContext';
 import { CartItem } from "./CartItem";
 import { formatCurrency } from '../utilities/formatCurrency';
 import storeItems from "../data/items.json"
+import ListGroup from 'react-bootstrap/ListGroup';
 
 type useShoppingCartProps = {
   isOpen: boolean
@@ -17,12 +18,17 @@ export function ShoppingCart({isOpen}: useShoppingCartProps){
       </Offcanvas.Header>
       <Offcanvas.Body className="txt-color">
           <Stack gap={3}>
-            {
-              cartItems.map(item =>(
-                <CartItem key={item.id} {...item} />
-              ))
-            }
-            <div>
+            <ListGroup variant="flush">
+              {
+                cartItems.map(item =>(
+                  <ListGroup.Item key={item.id}>
+                    <CartItem {...item} />
+                  </ListGroup.Item>
+                ))
+              }
+            </ListGroup>
+
+            <div className="total">
               Total {
                 formatCurrency(cartItems.reduce((total, cartItem)=>{
                   const item = storeItems.find(i => i.id === cartItem.id)

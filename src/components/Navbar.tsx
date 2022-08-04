@@ -11,7 +11,7 @@ export const Navba = () => {
 
   return (
     <>
-      <Navbar sticky='top' bg="dark" variant="dark" className='me-auto'>
+      <Navbar sticky='top' bg="dark" variant="dark"  className='me-auto navbar'>
         <Container>
           <Navbar.Brand to="/" as={NavLink}>SHOPPING</Navbar.Brand>
           <Nav className="me-auto">
