@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import imgCard from '../assets/images/card1.png'
+import imgCard from '../../public/assets/images/card1.png'
 import Button from 'react-bootstrap/Button'
 
 export const SliderCard = () => {
